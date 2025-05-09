@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ficha de Produto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+    .tabs {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+    }
+    .tab {
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-weight: 600;
+      color: #444;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.3s;
+    }
+    .tab.active {
+      border-bottom: 3px solid #0078d4;
+      color: #0078d4;
+    }
+    .tab i {
+      color: inherit;
+      transition: color 0.3s;
+    }
+    .tab-content {
+      display: none;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-label {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      margin-bottom: 4px;
+      color: #505050;
+    }
+    .form-value {
+      background: #f1f3f4;
+      padding: 10px;
+      border-radius: 6px;
+      font-family: monospace;
+      color: #2d2d2d;
+    }
+    .icon {
+      font-size: 12px;
+      color: #605e5c;
+    }
+    .styled-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "Segoe UI", sans-serif;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      margin-top: 1rem;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .styled-table thead {
+      background-color: #57c1b2;
+      color: white;
+      text-align: left;
+    }
+    .styled-table th,
+    .styled-table td {
+      padding: 12px 16px;
+      font-size: 14px;
+    }
+    .styled-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('identificacao')"><i class="fas fa-id-badge icon"></i>Identificação</button>
+    <button class="tab" onclick="showTab('escopo')"><i class="fas fa-list icon"></i>Escopo</button>
+    <button class="tab" onclick="showTab('estrategia')"><i class="fas fa-bullseye icon"></i>Estratégia</button>
+    <button class="tab" onclick="showTab('qualificacao')"><i class="fas fa-check-circle icon"></i>Qualificação</button>
+  </div>
+
+  <div id="identificacao" class="tab-content active">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-box icon"></i>Nome do Produto</label>
+      <div class="form-value">Demandas de Direito Tributário
+
+
+
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-align-left icon"></i>Descrição do Produto</label>
+      <p class="form-value">
+        Atuação em demandas contenciosas e consultivas de Direito Tributário, abrangendo execuções fiscais, defesas administrativas, ações anulatórias, mandados de segurança, restituições e orientações estratégicas para redução de riscos e passivos fiscais.</p>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-barcode icon"></i>Código</label>
+      <div class="form-value">JUR206</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-sitemap icon"></i>Área</label>
+      <div class="form-value">Jurídica</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-cow icon"></i>Classificação BCG</label>
+      <div class="form-value">Vaca Leiteira</div>
+    </div>
+    </div>
+
+  </div>
+
+  <div id="escopo" class="tab-content">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-file-alt icon"></i>Escopo</label>
+      <div class="form-value">
+        <ol data-start="118" data-end="960">
+          <li data-start="118" data-end="249" class="">
+          <p data-start="121" data-end="249" class=""><strong data-start="121" data-end="144">Análise da Demanda:</strong> Avaliação inicial do problema apresentado pelo cliente, incluindo documentos e notificações recebidas.</p>
+          </li>
+          <li data-start="250" data-end="425" class="">
+          <p data-start="253" data-end="425" class=""><strong data-start="253" data-end="278">Elaboração da Defesa:</strong> Construção de defesa técnica para processos administrativos e judiciais, contestação de autuações fiscais e recuperação de créditos tributários.</p>
+          </li>
+          <li data-start="426" data-end="560" class="">
+          <p data-start="429" data-end="560" class=""><strong data-start="429" data-end="459">Acompanhamento Processual:</strong> Monitoramento contínuo dos processos, garantindo que o cliente seja atualizado em todas as etapas.</p>
+          </li>
+          <li data-start="561" data-end="703" class="">
+          <p data-start="564" data-end="703" class=""><strong data-start="564" data-end="604">Recuperação de Créditos Tributários:</strong> Identificação e reivindicação de créditos tributários que possam ser compensados ou restituídos.</p>
+          </li>
+          <li data-start="704" data-end="841" class="">
+          <p data-start="707" data-end="841" class=""><strong data-start="707" data-end="745">Consultoria Tributária Preventiva:</strong> Orientação sobre práticas seguras para evitar novas autuações e garantir conformidade fiscal.</p>
+          </li>
+          <li data-start="842" data-end="960" class="">
+          <p data-start="845" data-end="960" class=""><strong data-start="845" data-end="865">Relatório Final:</strong> Comunicação clara ao cliente sobre o resultado do processo e orientações para ações futuras.</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-list-check icon"></i>Problemas que Resolve
+      </label>
+      <div class="form-value">
+        <ol data-start="999" data-end="1304">
+          <li data-start="999" data-end="1045" class="">
+          <p data-start="1001" data-end="1045" class="">Cobranças fiscais indevidas ou excessivas.</p>
+          </li>
+          <li data-start="1046" data-end="1099" class="">
+          <p data-start="1048" data-end="1099" class="">Multas e autuações aplicadas de forma inadequada.</p>
+          </li>
+          <li data-start="1100" data-end="1166" class="">
+          <p data-start="1102" data-end="1166" class="">Risco de perda financeira por débitos fiscais não contestados.</p>
+          </li>
+          <li data-start="1167" data-end="1233" class="">
+          <p data-start="1169" data-end="1233" class="">Dificuldade em recuperar créditos tributários de forma segura.</p>
+          </li>
+          <li data-start="1234" data-end="1304" class="">
+          <p data-start="1236" data-end="1304" class="">Falta de conhecimento técnico para lidar com disputas tributárias.</p>
+          </li>
+          </ol>
+      </div>
+
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="	fas fa-trophy icon"></i>Benefícios
+      </label>
+      <div class="form-value">
+        <ol data-start="1332" data-end="1646">
+          <li data-start="1332" data-end="1389" class="">
+          <p data-start="1334" data-end="1389" class="">Cancelamento ou redução de débitos fiscais indevidos.</p>
+          </li>
+          <li data-start="1390" data-end="1450" class="">
+          <p data-start="1392" data-end="1450" class="">Recuperação de créditos tributários pagos indevidamente.</p>
+          </li>
+          <li data-start="1451" data-end="1515" class="">
+          <p data-start="1453" data-end="1515" class="">Segurança jurídica em processos administrativos e judiciais.</p>
+          </li>
+          <li data-start="1516" data-end="1578" class="">
+          <p data-start="1518" data-end="1578" class="">Proteção do patrimônio da empresa contra passivos fiscais.</p>
+          </li>
+          <li data-start="1579" data-end="1646" class="">
+          <p data-start="1581" data-end="1646" class="">Orientação técnica e jurídica especializada em todas as etapas.</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+  </div>
+
+  <div id="estrategia" class="tab-content">
+
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-fire icon"></i>Prioridade de Venda</label>
+        <div class="form-value">Média</div>
+      </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-lightbulb icon"></i>Quando Ofertar</label>
+      <div class="form-value">
+        <ol data-start="1678" data-end="1989">
+          <li data-start="1678" data-end="1741" class="">
+          <p data-start="1680" data-end="1741" class="">Quando a empresa recebe uma notificação ou autuação fiscal.</p>
+          </li>
+          <li data-start="1742" data-end="1799" class="">
+          <p data-start="1744" data-end="1799" class="">Ao identificar créditos tributários não aproveitados.</p>
+          </li>
+          <li data-start="1800" data-end="1861" class="">
+          <p data-start="1802" data-end="1861" class="">Durante auditorias fiscais que revelam débitos em aberto.</p>
+          </li>
+          <li data-start="1862" data-end="1911" class="">
+          <p data-start="1864" data-end="1911" class="">Ao planejar a gestão de passivos tributários.</p>
+          </li>
+          <li data-start="1912" data-end="1989" class="">
+          <p data-start="1914" data-end="1989" class="">Sempre que o cliente busca garantir segurança jurídica e economia fiscal.</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-gem icon"></i>Proposta de Valor</label>
+      <div class="form-value">Oferecemos defesa técnica e estratégica em demandas de Direito Tributário, garantindo que sua empresa pague apenas o que é devido e recupere valores pagos indevidamente, com segurança jurídica e transparência.
+
+
+
+    </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-shopping-basket icon"></i>Cross-selling</label>
+      <div class="form-value">
+        <table class="styled-table">
+          <thead>
+              <tr>
+                  <th>Produto Complementar</th>
+                  <th>Justificativa da Conexão</th>
+                  <th>Área</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Consultoria Jurídica Tributária</td>
+                  <td>Identifica outros riscos tributários que podem gerar novas demandas.</td>
+                  <td>Jurídico</td>
+              </tr>
+              <tr>
+                  <td>Compensação / Restituição de Tributos</td>
+                  <td>Recupera valores pagos indevidamente em autuações passadas.</td>
+                  <td>Jurídico</td>
+              </tr>
+              <tr>
+                  <td>Planejamento Sucessório e Patrimonial</td>
+                  <td>Protege o patrimônio da empresa contra passivos tributários.</td>
+                  <td>Jurídico</td>
+              </tr>
+              <tr>
+                  <td>Gestão de Contencioso</td>
+                  <td>Acompanha e gerencia todos os processos administrativos e judiciais da empresa.</td>
+                  <td>Jurídico</td>
+              </tr>
+              <tr>
+                  <td>Mandado de Segurança</td>
+                  <td>Alternativa em caso de cobrança imediata de débitos.</td>
+                  <td>Jurídico</td>
+              </tr>
+              <tr>
+                  <td>Jurídico Recorrente</td>
+                  <td>Suporte contínuo para gestão de passivos e novas demandas.</td>
+                  <td>Jurídico</td>
+              </tr>
+              <tr>
+                  <td>Planejamento Tributário</td>
+                  <td>Identifica oportunidades de otimização fiscal e reduz riscos de novas autuações.</td>
+                  <td>Gestão Tributária</td>
+              </tr>
+              <tr>
+                  <td>BPO Contábil e Tributário</td>
+                  <td>Garante correta escrituração fiscal e evita autuações futuras.</td>
+                  <td>Contabilidade</td>
+              </tr>
+              <tr>
+                  <td>BI – Dashboards Tributários</td>
+                  <td>Permite acompanhar e mensurar débitos e créditos fiscais em tempo real.</td>
+                  <td>Inteligência de Dados</td>
+              </tr>
+              <tr>
+                  <td>Gestão de Resultados Financeiros</td>
+                  <td>Avalia o impacto financeiro dos passivos fiscais.</td>
+                  <td>Consultoria Empresarial</td>
+              </tr>
+              <tr>
+                  <td>Valuation</td>
+                  <td>Avalia o impacto dos passivos fiscais no valor da empresa.</td>
+                  <td>Consultoria Empresarial</td>
+              </tr>
+              <tr>
+                  <td>Estruturação de Dívidas</td>
+                  <td>Oferece alternativas para quitação ou negociação de passivos fiscais.</td>
+                  <td>Soluções Financeiras</td>
+              </tr>
+          </tbody>
+      </table>
+      
+        
+      </div>
+    </div>
+  </div>
+
+  <div id="qualificacao" class="tab-content">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-briefcase icon"></i>Regime Tributário Atendimento</label>
+      <div class="form-value">Lucro Real, Lucro Presumido e Simples Nacional</div>
+    </div>
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-sync-alt icon"></i>Tipo de Cobrança</label>
+        <div class="form-value">Pontual + Êxito</div>
+      </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-globe icon"></i>Abrangência Geográfica</label>
+      <div class="form-value">Nacional</div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label"><i class=" fas fa-file-invoice-dollar icon"></i>Faturamento Ideal</label>
+        <div class="form-value">Empresas com faturamento superior a R$ 5 milhões anuais.</div>
+      </div>
+
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-paperclip icon"></i>Documentos Solicitados</label>
+        <div class="form-value">
+          <ol data-start="4294" data-end="4676">
+            <li data-start="4294" data-end="4329" class="">
+            <p data-start="4297" data-end="4329" class="">Intimação ou citação recebida.</p>
+            </li>
+            <li data-start="4330" data-end="4442" class="">
+            <p data-start="4333" data-end="4442" class="">Documentos que comprovem os fatos alegados (notas fiscais, comprovantes de pagamento, escrituração fiscal).</p>
+            </li>
+            <li data-start="4443" data-end="4514" class="">
+            <p data-start="4446" data-end="4514" class="">Demonstrativos contábeis e fiscais relacionados ao débito cobrado.</p>
+            </li>
+            <li data-start="4515" data-end="4617" class="">
+            <p data-start="4518" data-end="4617" class="">Documentação que comprove a regularidade da empresa (Certidão Negativa de Débitos, se aplicável).</p>
+            </li>
+            <li data-start="4618" data-end="4676" class="">
+            <p data-start="4621" data-end="4676" class="">Histórico da empresa em disputas fiscais (se houver).</p>
+            </li>
+            </ol>
+                </div>
+        
+              </div>
+
+              <div class="form-group">
+                <label class="form-label"><i class=" fas fa-industry icon"></i>Setores ICP</label>
+                <div class="form-value">
+                  <ol data-start="4706" data-end="4916">
+                    <li data-start="4706" data-end="4745" class="">
+                    <p data-start="4708" data-end="4745" class="">Indústrias de médio e grande porte.</p>
+                    </li>
+                    <li data-start="4746" data-end="4785" class="">
+                    <p data-start="4748" data-end="4785" class="">Empresas de Transporte e Logística.</p>
+                    </li>
+                    <li data-start="4786" data-end="4822" class="">
+                    <p data-start="4788" data-end="4822" class="">Comércio Atacadista e Varejista.</p>
+                    </li>
+                    <li data-start="4823" data-end="4839" class="">
+                    <p data-start="4825" data-end="4839" class="">Agronegócio.</p>
+                    </li>
+                    <li data-start="4840" data-end="4877" class="">
+                    <p data-start="4842" data-end="4877" class="">Prestadoras de Serviços em Geral.</p>
+                    </li>
+                    <li data-start="4878" data-end="4916" class="">
+                    <p data-start="4880" data-end="4916" class="">Empresas de Tecnologia e Inovação.</p>
+                    </li>
+                    </ol>
+                
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label"><i class="fas fa-exclamation-circle icon"></i>Objeções Mapeadas</label>
+                <div class="form-value">
+                  <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Objeção</th>
+                            <th>O que o cliente quer dizer</th>
+                            <th>Como contornar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>“Isso vai me dar problema com o Fisco?”</td>
+                            <td>Medo de retaliação ou fiscalização.</td>
+                            <td>Explicar que a defesa é um direito garantido por lei e que o Fisco deve respeitar o contraditório.</td>
+                        </tr>
+                        <tr>
+                            <td>“É melhor pagar logo para não complicar.”</td>
+                            <td>Preferência por resolver rapidamente, sem análise.</td>
+                            <td>Reforçar que a defesa pode garantir economia e que débitos indevidos não devem ser pagos.</td>
+                        </tr>
+                        <tr>
+                            <td>“Já tentamos antes e não deu certo.”</td>
+                            <td>Frustração com tentativas anteriores mal conduzidas.</td>
+                            <td>Destacar o diferencial da Funcional em elaborar defesas técnicas, com base em jurisprudência.</td>
+                        </tr>
+                        <tr>
+                            <td>“O processo vai demorar muito?”</td>
+                            <td>Dúvida sobre o prazo de retorno.</td>
+                            <td>Explicar que a defesa é apresentada em até 5 dias e que o processo segue prazos legais.</td>
+                        </tr>
+                        <tr>
+                            <td>“E se bloquearem minha conta?”</td>
+                            <td>Medo de penhora online ou bloqueio patrimonial.</td>
+                            <td>Explicar que a defesa é justamente para suspender a execução e evitar bloqueios.</td>
+                        </tr>
+                        <tr>
+                            <td>“Isso parece caro demais.”</td>
+                            <td>Dúvida sobre o custo-benefício.</td>
+                            <td>Demonstrar que o serviço evita prejuízos muito maiores e protege o patrimônio da empresa.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                  
+                           
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label"><i class=" fas fa-industry icon"></i>Personas</label>
+                <div class="form-value">
+                    <ul data-start="107" data-end="257">
+                       <li data-start="174" data-end="257" class="" style="">
+                        <p data-start="176" data-end="257" class=""><strong data-start="176" data-end="190">Decisores:</strong> Proprietário, Diretor executivo 	</p>
+                        </li>
+                        </ul> </div>
+              </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-star-half-alt icon"></i>Diferenciais</label>
+      <div class="form-value">A Funcional atua com excelência técnica, estratégia jurídica e atendimento consultivo em demandas de direito tributário, assegurando que o cliente tenha suporte completo em litígios administrativos e judiciais, desde defesas em autuações fiscais e execuções até ações declaratórias, mandados de segurança e recuperação de tributos.
+
+        Nosso diferencial está na análise minuciosa dos autos de infração, identificação de vícios formais, interpretação da legislação e construção de teses de defesa robustas, sempre com linguagem clara e orientação prática. Atuamos com uma equipe especializada em direito tributário e contabilidade, garantindo que cada estratégia seja fundamentada e segura.
+        
+        Com atendimento próximo e comunicação acessível, a Funcional oferece pareceres técnicos, elaboração de peças processuais, suporte em audiências e acompanhamento contínuo de cada processo, promovendo proteção jurídica e previsibilidade para o cliente.
+        
+        Mais do que apenas litigar, a Funcional garante que o cliente tenha segurança, clareza e confiança em suas disputas tributárias, transformando conhecimento técnico em proteção e resultado.
+        
+        
+        
+        </div>
+    </div>
+  </div>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      document.querySelector(`.tab[onclick="showTab('${id}')"]`).classList.add('active');
+    }
+  </script>
+</body>
+</html>
